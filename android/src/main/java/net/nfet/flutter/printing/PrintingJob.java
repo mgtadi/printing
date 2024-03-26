@@ -379,8 +379,8 @@ public class PrintingJob extends PrintDocumentAdapter {
         configuration.fontScale = (float) 1;
         Context webContext = context.createConfigurationContext(configuration);
         final WebView webView = new WebView(webContext);
-        webView.getSettings.setJavaScriptEnabled(true);
-        webView.getSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         webView.getSettings().setAllowFileAccess(true);
         webView.loadDataWithBaseURL(baseUrl, data, "text/HTML", "UTF-8", null);
 
